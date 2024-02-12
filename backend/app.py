@@ -17,7 +17,7 @@ CORS(app)
 
 @app.route('/')
 def t():
-    return "Hello"
+    return "Hello World"
 
 @app.route('/test', methods=['GET'])
 def people():
