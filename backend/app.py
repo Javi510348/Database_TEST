@@ -15,6 +15,10 @@ app = Flask(__name__)
 CORS(app)
 
 
+app.route('/t')
+def t():
+    return "Hello"
+
 @app.route('/test', methods=['GET'])
 def people():
     if request.method == 'GET':
