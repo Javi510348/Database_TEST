@@ -23,4 +23,4 @@ jobs:
           version: latest
 
       - run: supabase link --project-ref $PROJECT_ID
-      - run: ssupabase backend deploy
+      - run: supabase backend deploy
