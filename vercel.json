@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "backend": "./app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "backend": "/(.*)",
+            "dest": "/"
+        }
+    ]
+}
