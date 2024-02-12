@@ -13,6 +13,7 @@ jobs:
     env:
       SUPABASE_ACCESS_TOKEN: sbp_4b1b28aceaf5ca56e377a521542d4f1dc2e53a98
       PROJECT_ID: cveicdaizlxtslvosxqm
+      SUPABASE_DB_PASSWORD: gYPndVdJQlupiJoS
 
     steps:
       - uses: actions/checkout@v3
@@ -21,4 +22,5 @@ jobs:
         with:
           version: latest
 
-      - run: supabase functions deploy backend --project-ref $PROJECT_ID
+      - run: supabase link --project-ref $PROJECT_ID
+      - run: supabase db push
