@@ -15,7 +15,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route('/t')
+@app.route('/')
 def t():
     return "Hello"
 
