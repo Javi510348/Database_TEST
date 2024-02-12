@@ -4,8 +4,8 @@ import json
 from flask import Flask,request, jsonify
 from flask_cors import CORS
 
-# from src.controller.person import PersonController
-# #from backend.controller.person import PersonController
+from src.controller.person import PersonController
+#from backend.controller.person import PersonController
 
 
 
@@ -18,13 +18,13 @@ CORS(app)
 def t():
     return "Hello World"
 
-# @app.route('/test', methods=['GET'])
-# def people():
-#     if request.method == 'GET':
-#         return PersonController().getAll()
+@app.route('/test', methods=['GET'])
+def people():
+    if request.method == 'GET':
+        return PersonController().getAll()
     
-#     else:
-#         return jsonify("Not Supported"), 405
+    else:
+        return jsonify("Not Supported"), 405
 
 
 
