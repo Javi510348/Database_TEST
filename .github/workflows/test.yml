@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      SUPABASE_ACCESS_TOKEN: SUPABASE_ACCESS_TOKEN
+      SUPABASE_ACCESS_TOKEN: sbp_4b1b28aceaf5ca56e377a521542d4f1dc2e53a98
       PROJECT_ID: cveicdaizlxtslvosxqm
 
     steps:
